@@ -120,6 +120,7 @@ header.scrolled { height: 70px; background: rgba(10, 10, 10, 0.95); box-shadow: 
 .galeria-item:hover img { transform: scale(1.1); filter: grayscale(0%); }
 
 /* Planos e Horários */
+.container-planos { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
 .planos-wrapper { display: grid; grid-template-columns: 3fr 2fr; gap: 40px; }
 .plano-card { background: var(--bg-card); border-radius: 16px; padding: 40px; border: 1px solid rgba(57, 255, 20, 0.3); position: relative; }
 .tag-popular { position: absolute; top: -15px; left: 40px; background: var(--accent-green); color: #000; font-size: 0.8rem; font-weight: 800; padding: 6px 20px; border-radius: 30px; text-transform: uppercase; }
