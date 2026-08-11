@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planos e Mensalidades | CT GYM</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/planos.css">
+</head>
+<body>
+
+    <!-- Header / Navegação -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-dumbbell"></i> CT<span>GYM</span>
+            </a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="modalidades.html">Modalidades</a></li>
+                    <li><a href="planos.html" class="active" style="color: var(--accent-green);">Planos</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+            <a href="https://wa.me/5512991469961?text=Olá!%20Gostaria%20de%20matricular-me%20na%20CT%20GYM." target="_blank" class="btn btn-primary btn-header">
+                <i class="fa-brands fa-whatsapp"></i> Matricule-se
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Banner Principal da Página -->
+    <section class="page-banner">
+        <div class="container reveal fade-up">
+            <h1>Planos e <span>Mensalidades</span></h1>
+            <p>Escolha o plano ideal para a sua rotina e comece hoje mesmo sua transformação física sem letras miúdas.</p>
+        </div>
+    </section>
+
+    <!-- Seção de Cards de Planos -->
+    <main class="section">
+        <div class="container">
+            <div class="planos-grid">
+                
+                <!-- Plano Mensal -->
+                <div class="plano-card reveal fade-up">
+                    <div class="plano-header">
+                        <h3>Plano Mensal</h3>
+                        <p style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 15px;">Liberdade sem fidelidade</p>
+                        <div class="plano-preco">
+                            <span class="moeda">R$</span>
+                            <span class="valor">119</span>
+                            <span class="periodo">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="plano-features">
+                        <li><i class="fa-solid fa-check"></i> Acesso livre à Musculação</li>
+                        <li><i class="fa-solid fa-check"></i> Acesso a todas as 6 Modalidades</li>
+                        <li><i class="fa-solid fa-check"></i> Armário rotativo incluso</li>
+                        <li class="off"><i class="fa-solid fa-xmark"></i> Avaliação física gratuita</li>
+                        <li class="off"><i class="fa-solid fa-xmark"></i> Levar acompanhante no mês</li>
+                    </ul>
+                    <a href="https://wa.me/5512991469961?text=Quero%20assinar%20o%20Plano%20Mensal" target="_blank" class="btn btn-outline" style="width: 100%; text-align: center;">
+                        Assinar Mensal
+                    </a>
+                </div>
+
+                <!-- Plano Semestral (Mais Popular) -->
+                <div class="plano-card popular reveal fade-up">
+                    <span class="badge-popular">Mais Escolhido</span>
+                    <div class="plano-header">
+                        <h3>Plano Semestral</h3>
+                        <p style="color: var(--accent-green); font-size: 0.9rem; margin-bottom: 15px; font-weight: 600;">Economia + Resultados contínuos</p>
+                        <div class="plano-preco">
+                            <span class="moeda">R$</span>
+                            <span class="valor">99</span>
+                            <span class="periodo">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="plano-features">
+                        <li><i class="fa-solid fa-check"></i> Acesso livre à Musculação</li>
+                        <li><i class="fa-solid fa-check"></i> Acesso ilimitado às 6 Modalidades</li>
+                        <li><i class="fa-solid fa-check"></i> 1 Avaliação Física com Bioimpedância</li>
+                        <li><i class="fa-solid fa-check"></i> Armário rotativo incluso</li>
+                        <li><i class="fa-solid fa-check"></i> 1 Passe VIP para amigo/mês</li>
+                    </ul>
+                    <a href="https://wa.me/5512991469961?text=Quero%20assinar%20o%20Plano%20Semestral" target="_blank" class="btn btn-primary" style="width: 100%; text-align: center;">
+                        Garantir Plano Semestral
+                    </a>
+                </div>
+
+                <!-- Plano Anual VIP -->
+                <div class="plano-card reveal fade-up">
+                    <div class="plano-header">
+                        <h3>Plano Anual VIP</h3>
+                        <p style="color: var(--text-gray); font-size: 0.9rem; margin-bottom: 15px;">A experiência definitiva</p>
+                        <div class="plano-preco">
+                            <span class="moeda">R$</span>
+                            <span class="valor">84</span>
+                            <span class="periodo">/mês</span>
+                        </div>
+                    </div>
+                    <ul class="plano-features">
+                        <li><i class="fa-solid fa-check"></i> Acesso livre à Musculação</li>
+                        <li><i class="fa-solid fa-check"></i> Acesso ilimitado às 6 Modalidades</li>
+                        <li><i class="fa-solid fa-check"></i> Avaliação Física Trimestral</li>
+                        <li><i class="fa-solid fa-check"></i> Camisa Oficial CT GYM de brinde</li>
+                        <li><i class="fa-solid fa-check"></i> 2 Passes VIPs para amigo/mês</li>
+                    </ul>
+                    <a href="https://wa.me/5512991469961?text=Quero%20assinar%20o%20Plano%20Anual" target="_blank" class="btn btn-outline" style="width: 100%; text-align: center;">
+                        Assinar Anual VIP
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Tabela Comparativa de Benefícios -->
+    <section class="section bg-alt">
+        <div class="container">
+            <div class="section-title reveal fade-up">
+                <h2>Comparativo <span>Detalhado</span></h2>
+                <p>Veja o que cada plano inclui e escolha a melhor opção para a sua rotina.</p>
+            </div>
+
+            <div class="tabela-comparativa-wrapper reveal fade-up">
+                <table class="tabela-comparativa">
+                    <thead>
+                        <tr>
+                            <th>Recursos & Benefícios</th>
+                            <th>Mensal</th>
+                            <th class="destaque">Semestral ⭐</th>
+                            <th>Anual VIP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Área de Musculação Completa</td>
+                            <td><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i></td>
+                            <td><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i></td>
+                            <td><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Aulas de Funcional, G.A.P e Alongamento</td>
+                            <td><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i></td>
+                            <td><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i></td>
+                            <td><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Aulas de Bike Indoor, Fit Dance e Zumba</td>
+                            <td><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i></td>
+                            <td><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i></td>
+                            <td><i class="fa-solid fa-circle-check" style="color: var(--accent-green);"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Avaliação Física com Bioimpedância</td>
+                            <td><i class="fa-solid fa-circle-xmark" style="color: #555;"></i></td>
+                            <td>Semestral</td>
+                            <td>Trimestral</td>
+                        </tr>
+                        <tr>
+                            <td>Convite VIP para Acompanhante</td>
+                            <td><i class="fa-solid fa-circle-xmark" style="color: #555;"></i></td>
+                            <td>1x ao mês</td>
+                            <td>2x ao mês</td>
+                        </tr>
+                        <tr>
+                            <td>Brinde Exclusivo CT GYM</td>
+                            <td><i class="fa-solid fa-circle-xmark" style="color: #555;"></i></td>
+                            <td><i class="fa-solid fa-circle-xmark" style="color: #555;"></i></td>
+                            <td>Camisa Oficial</td>
+                        </tr>
+                        <tr>
+                            <td>Taxa de Cancelamento</td>
+                            <td>Isento</td>
+                            <td>Regra Padrão</td>
+                            <td>Regra Padrão</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Perguntas Frequentes (FAQ) -->
+    <section class="section">
+        <div class="container">
+            <div class="section-title reveal fade-up">
+                <h2>Perguntas <span>Frequentes</span></h2>
+                <p>Tire suas dúvidas sobre matrículas, horários, formas de pagamento e funcionamento.</p>
+            </div>
+
+            <div class="faq-container reveal fade-up">
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Como funciona a Aula Experimental Gratuita?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>A aula experimental é 100% grátis! Basta entrar em contato com a gente via WhatsApp e agendar o horário de sua preferência. Você poderá testar a musculação ou qualquer uma de nossas 6 modalidades acompanhado por um instrutor.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Quais são as formas de pagamento aceitas?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Aceitamos Pix, cartões de crédito (em até 12x no plano anual), débito recorrente (sem ocupar o limite total do cartão) e dinheiro.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>O plano dá direito a todas as modalidades de aulas?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim! Todos os nossos planos (Mensal, Semestral e Anual) dão acesso livre tanto para a musculação quanto para a grade completa de aulas: Funcional, Fit Dance, Alongamento, G.A.P, Bike Indoor e Zumba.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Preciso pagar taxa de adesão ou renovação de matrícula?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Não cobramos taxa de adesão e nem manutenção anual em nossas promoções ativas! O valor do plano escolhido é o único valor cobrado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Posso trancar meu plano por motivo de viagem ou saúde?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sim. Os planos Semestral e Anual possuem direito ao trancamento temporário da matrícula mediante apresentação de atestado médico ou aviso prévio em viagens de até 30 dias.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Rodapé -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">CT <span>GYM</span></div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ctgym.1?igsh=bnc3azhsZzkxYjJ2"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 CT GYM. Desenvolvido com excelência.</p>
+        </div>
+    </footer>
+
+    <!-- Botão Flutuante do WhatsApp (FAB) -->
+    <a href="https://wa.me/5512991469961" class="whatsapp-float pulse" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Script de Animações e Sanfona do FAQ -->
+    <script src="script/script.js"></script>
+    <script>
+        // Lógica Interativa da Sanfona (Accordion) do FAQ
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                
+                // Fecha os outros itens abertos
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                    }
+                });
+
+                // Alterna o estado do item clicado
+                faqItem.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

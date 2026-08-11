@@ -1,0 +1,65 @@
+/* Header Glassmorphism */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+}
+header.scrolled {
+  height: 70px;
+  background: rgba(10, 10, 10, 0.95);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+.logo span {
+  color: var(--accent-green);
+}
+.nav-list {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+.nav-list a {
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+.nav-list a:hover {
+  color: var(--accent-green);
+}
+.nav-cta {
+  background: rgba(57, 255, 20, 0.1);
+  color: var(--accent-green) !important;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(57, 255, 20, 0.3);
+}
+.nav-cta:hover {
+  background: var(--accent-green);
+  color: #000 !important;
+}
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}

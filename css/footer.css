@@ -1,0 +1,31 @@
+/* Footer */
+footer {
+  padding: 40px 0;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+.footer-logo {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.footer-logo span {
+  color: var(--accent-green);
+}
+.social-links a {
+  display: inline-flex;
+  width: 45px;
+  height: 45px;
+  background: var(--bg-card);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  transition: var(--transition);
+  margin-bottom: 15px;
+}
+.social-links a:hover {
+  background: var(--accent-green);
+  color: #000;
+  transform: translateY(-3px);
+}

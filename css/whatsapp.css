@@ -1,0 +1,57 @@
+/* WhatsApp FAB */
+.whatsapp-float {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25d366;
+  color: #fff;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  z-index: 999;
+  transition: var(--transition);
+}
+.whatsapp-float:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+
+/* Animações (Vanilla JS Reveal & CSS) */
+.reveal {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
+}
+.reveal.fade-up {
+  transform: translateY(40px);
+}
+.reveal.fade-right {
+  transform: translateX(-40px);
+}
+.reveal.fade-left {
+  transform: translateX(40px);
+}
+.reveal.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(57, 255, 20, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 15px rgba(57, 255, 20, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(57, 255, 20, 0);
+  }
+}
+.pulse {
+  animation: pulse 2s infinite;
+}

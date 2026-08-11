@@ -1,0 +1,283 @@
+/* ==========================================================================
+   PLANOS.CSS - Estilos Exclusivos da Página de Planos e FAQ
+   ========================================================================== */
+
+/* Banner Principal */
+.page-banner {
+  padding: 160px 0 80px 0;
+  background:
+    linear-gradient(0deg, var(--bg-primary) 0%, rgba(10, 10, 10, 0.85) 100%),
+    url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1600")
+      center/cover no-repeat;
+  text-align: center;
+}
+
+.page-banner h1 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.page-banner p {
+  color: var(--text-gray);
+  font-size: 1.2rem;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Grid de Cards de Planos */
+.planos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-items: stretch;
+  margin-bottom: 60px;
+}
+
+.plano-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: var(--transition);
+}
+
+.plano-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(57, 255, 20, 0.4);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Destaque para o Plano Mais Popular */
+.plano-card.popular {
+  border: 2px solid var(--accent-green);
+  background: linear-gradient(
+    180deg,
+    rgba(57, 255, 20, 0.05) 0%,
+    var(--bg-card) 100%
+  );
+  transform: scale(1.04);
+}
+
+.plano-card.popular:hover {
+  transform: scale(1.04) translateY(-8px);
+}
+
+.badge-popular {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-green);
+  color: #000;
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 16px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(57, 255, 20, 0.3);
+}
+
+.plano-header {
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.plano-header h3 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.plano-preco {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 4px;
+}
+
+.plano-preco .moeda {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--accent-green);
+}
+
+.plano-preco .valor {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-white);
+}
+
+.plano-preco .periodo {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+}
+
+.plano-features {
+  list-style: none;
+  margin-bottom: 35px;
+  flex-grow: 1;
+}
+
+.plano-features li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  color: var(--text-white);
+}
+
+.plano-features li.off {
+  color: #666;
+  text-decoration: line-through;
+}
+
+.plano-features li i {
+  color: var(--accent-green);
+  font-size: 1.1rem;
+}
+
+.plano-features li.off i {
+  color: #444;
+}
+
+/* Tabela Comparativa Detalhada */
+.tabela-comparativa-wrapper {
+  overflow-x: auto;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.tabela-comparativa {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 650px;
+}
+
+.tabela-comparativa th,
+.tabela-comparativa td {
+  padding: 18px 20px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tabela-comparativa th:first-child,
+.tabela-comparativa td:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+
+.tabela-comparativa th {
+  background: rgba(255, 255, 255, 0.03);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.tabela-comparativa th.destaque {
+  color: var(--accent-green);
+  border-bottom: 2px solid var(--accent-green);
+}
+
+.tabela-comparativa tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.tabela-comparativa td i.fa-check-circle {
+  color: var(--accent-green);
+  font-size: 1.3rem;
+}
+
+.tabela-comparativa td i.fa-times-circle {
+  color: #444;
+  font-size: 1.3rem;
+}
+
+/* Seção de FAQ (Perguntas Frequentes) */
+.faq-container {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.faq-item.active {
+  border-color: rgba(57, 255, 20, 0.4);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 22px 25px;
+  background: none;
+  border: none;
+  color: var(--text-white);
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+}
+
+.faq-question i {
+  color: var(--accent-green);
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question i {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition:
+    max-height 0.4s ease,
+    padding 0.3s ease;
+  padding: 0 25px;
+  color: var(--text-gray);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 250px;
+  padding: 0 25px 22px 25px;
+}
+
+/* Responsividade de Planos */
+@media (max-width: 992px) {
+  .planos-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .plano-card.popular {
+    transform: scale(1);
+  }
+  .plano-card.popular:hover {
+    transform: translateY(-8px);
+  }
+}
